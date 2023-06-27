@@ -18,4 +18,36 @@ function getComputerChoice(){
     return choice;
     
 }
-console.log(getComputerChoice());
+const playerSelection = prompt();
+const computerSelection = getComputerChoice();
+function playRound(playerSelection , computerSelection){
+  var  ps= playerSelection.toLowerCase();
+  var cs= computerSelection.toLowerCase();
+
+  if(ps=="rock"){
+    if(cs=="rock")
+      return "tie";
+       else if (cs=="paper")
+          return " you lose ! paper beats rock !";
+             else if (cs="scissors")
+                 return " you win ! rock beats scissors !";
+  }
+  if(ps=="paper"){
+    if(cs=="paper")
+      return "tie";
+       else if (cs=="rock")
+          return " you win ! paper beats rock !";
+             else if (cs="scissors")
+                 return " you lose !  scissors beats paper";
+  }
+  if(ps=="scissors"){
+    if(cs=="scissors")
+      return "tie";
+       else if (cs=="rock")
+          return " you lose !  rock beats scissors !";
+             else if (cs="paper")
+                 return " you win ! scissors beats paper";
+  }
+
+}
+console.log( playRound(playerSelection , computerSelection)) ;
