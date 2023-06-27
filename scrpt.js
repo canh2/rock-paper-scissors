@@ -18,7 +18,7 @@ function getComputerChoice(){
     return choice;
     
 }
-const playerSelection = prompt();
+
 const computerSelection = getComputerChoice();
 function playRound(playerSelection , computerSelection){
   var  ps= playerSelection.toLowerCase();
@@ -26,28 +26,53 @@ function playRound(playerSelection , computerSelection){
 
   if(ps=="rock"){
     if(cs=="rock")
-      return "tie";
+    return 0;
+      //return "tie";
        else if (cs=="paper")
-          return " you lose ! paper beats rock !";
+       return -1;
+        //  return " you lose ! paper beats rock !";
              else if (cs="scissors")
-                 return " you win ! rock beats scissors !";
+             return 1;
+               //  return " you win ! rock beats scissors !";
   }
   if(ps=="paper"){
     if(cs=="paper")
-      return "tie";
+     // return "tie";
+     return 0;
        else if (cs=="rock")
-          return " you win ! paper beats rock !";
+       return 1;
+
+         // return " you win ! paper beats rock !";
              else if (cs="scissors")
-                 return " you lose !  scissors beats paper";
+             return -1;
+
+               //  return " you lose !  scissors beats paper";
   }
   if(ps=="scissors"){
     if(cs=="scissors")
-      return "tie";
+      //return "tie";
+      return 0;
        else if (cs=="rock")
-          return " you lose !  rock beats scissors !";
+       return -1;
+         // return " you lose !  rock beats scissors !";
              else if (cs="paper")
-                 return " you win ! scissors beats paper";
+             return 1;
+               //  return " you win ! scissors beats paper";
   }
 
 }
-console.log( playRound(playerSelection , computerSelection)) ;
+
+function game(){
+    var score=0;
+    
+  for (let i =0 ; i<=4 ; i++) {
+    const playerSelection = prompt();
+    score = score +playRound(playerSelection , computerSelection) ;
+    
+  }
+  if ( score> 0 )
+    console.log(" WINNER");
+    else
+    console.log(" LOOSER");
+}
+game();
