@@ -37,13 +37,13 @@ function getComputerChoice(){
     var choice="";
     switch (ch){
         case 1:
-            choice="Rock";
+            choice="rock";
             break;
          case 2:
-               choice="Paper";
+               choice="paper";
                break;
            case 3:
-               choice="Scissors";
+               choice="scissors";
                break;
 
     }
@@ -54,8 +54,7 @@ function getComputerChoice(){
 
 function playRound(playerSelection  ,computerSelection){
 
-  var  ps= playerSelection.toLowerCase();
-  var cs= computerSelection.toLowerCase();
+
   cont.textContent = 'Computer chose ' + computerSelection;
         rd.appendChild(cont);
   if(ps=="rock"){
