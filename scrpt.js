@@ -181,18 +181,18 @@ buttons.forEach((button) => {
         if(ps==5)
         {
     
-        window.location.href = "finwin.html";
+        window.open("finwin.html");
         }
         else
         {
   
-        window.location.href = "finlose.html";
+        window.open("finlose.html");
         }
       
 
         return 0;
       }
-  if(score<5 && score > -5)
+  if(score<5  && score > -5)
   {
 
     const computerSelection = getComputerChoice();
@@ -209,13 +209,23 @@ buttons.forEach((button) => {
                 break;
 
            }
-       console.log(score);
-    if (score > 0 )
-             console.log("WINNER");
-        else if( score < 0 )
-        console.log("LOOSER");
-          else
-             console.log("TIE");
+
+      if(cs==5 || ps==5){
+        if(ps==5)
+        {
+    
+        window.open("finwin.html");
+        }
+        else
+        {
+  
+        window.open("finlose.html");
+        }
+      
+
+        return 0;
+      }
+
 
 
 
