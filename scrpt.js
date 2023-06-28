@@ -37,13 +37,13 @@ function getComputerChoice(){
     var choice="";
     switch (ch){
         case 1:
-            choice="rock";
+            choice="Rock";
             break;
          case 2:
-               choice="paper";
+               choice="Paper";
                break;
            case 3:
-               choice="scissors";
+               choice="Scissors";
                break;
 
     }
@@ -54,7 +54,8 @@ function getComputerChoice(){
 
 function playRound(playerSelection  ,computerSelection){
 
-
+  var  ps= playerSelection.toLowerCase();
+  var cs= computerSelection.toLowerCase();
   cont.textContent = 'Computer chose ' + computerSelection;
         rd.appendChild(cont);
   if(ps=="rock"){
@@ -142,7 +143,26 @@ function playRound(playerSelection  ,computerSelection){
 }
 
 
+// const rock=document.querySelector('#ro');
 
+// rock.addEventListener('click', playRound);
+
+
+
+// function game(){
+//     var score=0;
+    
+//   for (let i =0 ; i<=4 ; i++) {
+//     const playerSelection = prompt();
+//     score = score +playRound(playerSelection , computerSelection) ;
+    
+//   }
+//   if ( score> 0 )
+//     console.log(" WINNER");
+//     else
+//     console.log(" LOOSER");
+// }
+// game();
 let score=0;
 let thisScore=0;
 let cs=0;
