@@ -142,26 +142,7 @@ function playRound(playerSelection  ,computerSelection){
 }
 
 
-// const rock=document.querySelector('#ro');
 
-// rock.addEventListener('click', playRound);
-
-
-
-// function game(){
-//     var score=0;
-    
-//   for (let i =0 ; i<=4 ; i++) {
-//     const playerSelection = prompt();
-//     score = score +playRound(playerSelection , computerSelection) ;
-    
-//   }
-//   if ( score> 0 )
-//     console.log(" WINNER");
-//     else
-//     console.log(" LOOSER");
-// }
-// game();
 let score=0;
 let thisScore=0;
 let cs=0;
