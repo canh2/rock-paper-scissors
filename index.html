@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <script src="scrpt.js" > </script>
+        <script src="scrpt.js"  defer> </script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        
+        <div id="welcome">
+            <p> Make ur choice </p>
+        </div>
+        <div id="phrase">
+            <p id ="rd"></p>
+       </div>
+        <div id="phrase">
+             <p id ="red"></p>
+        </div>
+       
+        <div id="score-label">
+            <p class="label">you</p>
+            <p class="label">computer</p>
+          </div>
+   
+          <div id="score-container">
+            <div id="player-score" ></div>
+            <div id="computer-score" ></div>
+          </div>
+          <div id="results-container"></div>
+        </div>
+
+        <div id="btn-container">
+            <div id="rock" class="button">
+              <img src="images/rock.png" alt="Rock" />
+            </div>
+            <div id="paper" class="button">
+              <img src="images/paper.png" alt="Paper" />
+            </div>
+            <div id="scissors" class="button">
+              <img src="images/scissors.png" alt="Scissors" />
+            </div>
+          </div>
+ 
     </body>
 </html>
