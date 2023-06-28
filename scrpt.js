@@ -173,6 +173,25 @@ buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const img = button.querySelector("img");
       playerSelection = img.alt.toLowerCase();
+      
+
+
+
+      if(cs==5 || ps==5){
+        if(ps==5)
+        {
+    
+        window.location.href = "finwin.html";
+        }
+        else
+        {
+  
+        window.location.href = "finlose.html";
+        }
+      
+
+        return 0;
+      }
   if(score<5 && score > -5)
   {
 
@@ -189,7 +208,7 @@ buttons.forEach((button) => {
                 cos.textContent = cs;
                 break;
 
-      }
+           }
        console.log(score);
     if (score > 0 )
              console.log("WINNER");
@@ -197,6 +216,9 @@ buttons.forEach((button) => {
         console.log("LOOSER");
           else
              console.log("TIE");
+
+
+
   }
     });
   });
